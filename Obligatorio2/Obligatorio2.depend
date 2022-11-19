@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1668809179 source:c:\users\perci\onedrive\escritorio\obligatorio2\arbolexp.cpp
+	<stdio.h>
+	"arbolExp.h"
+
+1668809179 c:\users\perci\onedrive\escritorio\obligatorio2\arbolexp.h
+
+1668808128 source:c:\users\perci\onedrive\escritorio\obligatorio2\boolean.cpp
+	<stdio.h>
+	"boolean.h"
+
+1668808128 c:\users\perci\onedrive\escritorio\obligatorio2\boolean.h
+
+1668819352 source:c:\users\perci\onedrive\escritorio\obligatorio2\escribano.cpp
+	<stdio.h>
+	"escribano.h"
+
+1668819353 c:\users\perci\onedrive\escritorio\obligatorio2\escribano.h
+	"string.h"
+
+1668808279 c:\users\perci\onedrive\escritorio\obligatorio2\string.h
+	"boolean.h"
+
+1668814341 source:c:\users\perci\onedrive\escritorio\obligatorio2\evaluacion.cpp
+	<stdio.h>
+	"evaluacion.h"
+
+1668814341 c:\users\perci\onedrive\escritorio\obligatorio2\evaluacion.h
+
+1668819352 source:c:\users\perci\onedrive\escritorio\obligatorio2\fecha.cpp
+	<stdio.h>
+	"fecha.h"
+
+1668819353 c:\users\perci\onedrive\escritorio\obligatorio2\fecha.h
+	"boolean.h"
+
+1668819353 source:c:\users\perci\onedrive\escritorio\obligatorio2\listarev.cpp
+	<stdio.h>
+	"listaRev.h"
+
+1668819353 c:\users\perci\onedrive\escritorio\obligatorio2\listarev.h
+	"revision.h"
+
+1668819353 c:\users\perci\onedrive\escritorio\obligatorio2\revision.h
+	"fecha.h"
+	"evaluacion.h"
+	"string.h"
+
+1668808128 source:c:\users\perci\onedrive\escritorio\obligatorio2\main.cpp
+	<stdio.h>
+
+1668809179 source:c:\users\perci\onedrive\escritorio\obligatorio2\menu.cpp
+	<stdio.h>
+	"menu.h"
+
+1668809179 c:\users\perci\onedrive\escritorio\obligatorio2\menu.h
+
+1668808279 source:c:\users\perci\onedrive\escritorio\obligatorio2\string.cpp
+	<stdio.h>
+	"string.h"
+
