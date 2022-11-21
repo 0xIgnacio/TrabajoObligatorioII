@@ -18,6 +18,14 @@ evaluacion darEvaluacion(revision r) {
   return r.resultado;
 }
 
+// Funcionalidades
+long expMenor(long e, long f) {
+  long mayor = e;
+    if(e < f)
+      mayor = f;
+  return mayor;
+}
+
 // Cargar -Mostrar
 void cargar(revision r) {
   cargar(r.realizado);
@@ -29,8 +37,8 @@ void cargar(revision r) {
 }
 void mostrar(revision r) {
   mostrar(r.realizado);
-    printf("\nMotivo: ");
+    printf(", ");
   print(r.motivo);
-    printf("\nCodigo de expediente: %ld", r.codigoExp);
+    printf(", %ld, ", r.codigoExp);
   mostrar(r.resultado);
 }

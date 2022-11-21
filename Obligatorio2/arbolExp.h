@@ -13,7 +13,7 @@ typedef nodoExp *arbol;
 
 // Base
 void crear(arbol &a);
-boolean esVacio(arbol a);
+boolean vacio(arbol a);
 arbol hijoIzq(arbol a);
 arbol hijoDer(arbol a);
 expediente darRaiz(arbol a);

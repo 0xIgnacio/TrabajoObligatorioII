@@ -20,7 +20,7 @@ void cargar(expediente &e) {
       scanf("%d", &e.cantPaginas);
 }
 void mostrar(expediente e) {
-    printf("\n%ld, ", e.codigo);
+    printf("%ld, ", e.codigo);
   print(e.caratula);
     printf(", ");
   mostrar(e.datosEscri);

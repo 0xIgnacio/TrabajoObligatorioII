@@ -19,6 +19,9 @@ void darMotivo(revision r, string &s);
 long darCodigoExp(revision r);
 evaluacion darEvaluacion(revision r);
 
+// Funcionalidades
+long expMenor(long e, long f);
+
 // Cargar -Mostrar
 void cargar(revision r);
 void mostrar(revision r);

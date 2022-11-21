@@ -10,11 +10,11 @@ typedef struct {
   int cantPaginas;
 } expediente;
 
-//Selectoras
+// Selectoras
 long darCodigo(expediente e);
 int darCantPaginas(expediente e);
 
-//  Cargar - Mostrar
+// Cargar - Mostrar
 void cargar(expediente &e);
 void mostrar(expediente e);
 

@@ -5,7 +5,7 @@
 void crear(arbol &a) {
   a = NULL;
 }
-boolean esVacio(arbol a) {
+boolean vacio(arbol a) {
   boolean es = FALSE;
     if(a == NULL)
       es = TRUE;
@@ -32,8 +32,9 @@ int cantidad(arbol a, string s) {
   if(a == NULL)
     return 0;
   else {
-    escribano e = a -> info.datosEscri;
-      if(streq(e.apellido, s))
+    string apellido;
+    darApellido(a -> info.datosEscri, apellido);
+      if(streq(apellido, s))
         return 1 + cantidad(a -> izq, s) + cantidad(a -> der, s);
       else
         return 0 + cantidad(a -> izq, s) + cantidad(a -> der, s);
@@ -42,7 +43,7 @@ int cantidad(arbol a, string s) {
 
 // Cargar - Mostrar
 void borrarMinimo(arbol &a) {
-    if(a -> izq == NULL) {
+    if(vacio(a -> izq)) {
       arbol aux = a -> der;
       delete a;
       a = aux;
@@ -51,7 +52,7 @@ void borrarMinimo(arbol &a) {
       borrarMinimo(a -> izq);
 }
 void borrarMaximo(arbol &a) {
-    if(a -> der == NULL) {
+    if(vacio(a -> der)) {
       arbol aux = a -> izq;
       delete a;
       a = aux;
@@ -60,7 +61,7 @@ void borrarMaximo(arbol &a) {
       borrarMaximo(a -> der);
 }
 void cargar(arbol &a, expediente e) {
-    if(esVacio(a)) {
+    if(vacio(a)) {
       a = new nodoExp;
       a -> info = e;
       a -> der = NULL;
@@ -75,13 +76,13 @@ void cargar(arbol &a, expediente e) {
 }
 void borrar(arbol &a, long codigo) {
     if(codigo == darCodigo(a -> info)) {
-        if(a -> izq == NULL) {
+        if(vacio(a -> izq)) {
           arbol aux = a -> der;
           delete a;
           a = aux;
         }
         else {
-            if(a -> der == NULL) {
+            if(vacio(a -> der)) {
               arbol aux = a -> izq;
               delete a;
               a = aux;
@@ -113,7 +114,7 @@ boolean existe(arbol a, long codigo) {
       return TRUE;
     }
     else {
-        if(a == NULL)
+        if(vacio(a))
           return FALSE;
         else {
             if(codigo < darCodigo(a->info))
@@ -124,13 +125,13 @@ boolean existe(arbol a, long codigo) {
     }
 }
 expediente mayor(arbol a) {
-    if(a -> der == NULL)
+    if(vacio(a -> der))
       return a -> info;
     else
       return mayor(a -> der);
 }
 expediente menor(arbol a) {
-    if(a -> izq == NULL)
+    if(vacio(a -> izq))
       return a -> info;
     else
       return menor(a -> izq);

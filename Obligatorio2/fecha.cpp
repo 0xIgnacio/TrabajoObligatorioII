@@ -22,7 +22,7 @@ void cargar(fecha &f) {
       scanf("%d", &f.anio);
 }
 void mostrar(fecha f) {
-    printf("DD/MM/AAAA: %d/%d/%d", f.dia, f.mes, f.anio);
+    printf("%d/%d/%d", f.dia, f.mes, f.anio);
 }
 
 // Funcionalidades
@@ -75,4 +75,13 @@ boolean valida(fecha f) {
         break;
     }
   return valida;
+}
+boolean periodo(fecha f, fecha g, fecha h) {
+  boolean es = FALSE;
+    if(darAnio(h) >= darAnio(f) && darAnio(h) <= darAnio(g)) {
+        if(darMes(h) >= darMes(f) && darMes(h) <= darMes(g)) {
+            if(darDia(h) >= darDia(f) && darDia(h) <= darDia(g))
+              es = TRUE;
+        }
+    }
 }
