@@ -110,12 +110,12 @@ void mostrar(arbol a) {
 
 // Busqueda
 boolean existe(arbol a, long codigo) {
-    if(codigo == darCodigo(a->info)) {
-      return TRUE;
-    }
+    if(vacio(a))
+      return FALSE;
     else {
-        if(vacio(a))
-          return FALSE;
+        if(codigo == darCodigo(a->info)) {
+          return TRUE;
+        }
         else {
             if(codigo < darCodigo(a->info))
               return existe(a -> izq, codigo);

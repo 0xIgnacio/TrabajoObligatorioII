@@ -7,7 +7,8 @@ void darApellido(escribano es, string &s){
 }
 
 // Cargar - Mostrar
-void cargar(escribano es){
+void cargar(escribano &es){
+ 
     printf("Ingrese el nombre del escribano: ");
   scan(es.nombre);
     printf("Ingrese el apellido del escribano: ");

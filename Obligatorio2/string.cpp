@@ -30,6 +30,7 @@ void scan(string &s) {
   string aux = new char[MAX];
   int i=0;
   char c;
+  fflush(stdin);
     scanf ("%c", &c);
     while(c!= '\n' && i < MAX-1) {
       aux[i] = c;
@@ -37,6 +38,7 @@ void scan(string &s) {
         scanf("%c", &c);
     }
   aux[i] = '\0';
+  strcrear(s);
   strcop (s,aux);
   strdestruir (aux);
 }

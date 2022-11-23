@@ -16,9 +16,9 @@ int darAnio(fecha f) {
 void cargar(fecha &f) {
     printf("Ingrese el dia: ");
       scanf("%d", &f.dia);
-    printf("\nIngrese el mes: ");
+    printf("Ingrese el mes: ");
       scanf("%d", &f.mes);
-    printf("\nIngrese el anio: ");
+    printf("Ingrese el anio: ");
       scanf("%d", &f.anio);
 }
 void mostrar(fecha f) {

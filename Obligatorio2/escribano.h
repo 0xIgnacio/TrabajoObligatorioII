@@ -12,7 +12,7 @@ typedef struct {
 void darApellido(escribano es, string &s);
 
 // Cargar - Mostrar
-void cargar(escribano es);
+void cargar(escribano &es);
 void mostrar(escribano es);
 
 #endif
