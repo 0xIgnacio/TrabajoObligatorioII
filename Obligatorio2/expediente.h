@@ -18,4 +18,8 @@ int darCantPaginas(expediente e);
 void cargar(expediente &e);
 void mostrar(expediente e);
 
+// Archivos
+void bajar(expediente e, FILE *a);
+void levantar(expediente e, FILE *a);
+
 #endif

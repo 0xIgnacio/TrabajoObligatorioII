@@ -23,7 +23,11 @@ evaluacion darEvaluacion(revision r);
 long expMenor(long e, long f);
 
 // Cargar -Mostrar
-void cargar(revision r);
+void cargar(revision &r);
 void mostrar(revision r);
+
+// Archivos
+void bajar(revision e, FILE *a);
+void levantar(revision e, FILE *a);
 
 #endif

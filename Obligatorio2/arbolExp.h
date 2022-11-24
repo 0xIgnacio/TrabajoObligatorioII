@@ -34,4 +34,8 @@ boolean existe(arbol a, long codigo);
 expediente mayor(arbol a);
 expediente menor(arbol a);
 
+// Archivos
+void bajar(arbol e);
+void levantar(arbol &e);
+
 #endif

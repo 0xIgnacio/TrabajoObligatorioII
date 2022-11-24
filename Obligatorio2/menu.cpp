@@ -25,7 +25,7 @@ void menuListados() {
   printf("******************************** Axel De Leon - Ignacio Perciante **********************************\n");
   printf("********************************************* Listados *********************************************\n");
   printf("**************** 1. Expedientes                                                     ****************\n");
-  printf("**************** 2. Expediente de mayor código y el de menor código                 ****************\n");
+  printf("**************** 2. Expediente de mayor codigo y el de menor codigo                 ****************\n");
   printf("**************** 3. Revisiones                                                      ****************\n");
   printf("**************** 4. Revisiones segun expediente                                     ****************\n");
   printf("**************** 5. Volver al menu principal                                        ****************\n");

@@ -107,7 +107,7 @@ boolean streq(string s1,string s2) {
 }
 
 // ==================== Archivos ====================
-void bajarString(string s, FILE *a) {
+void bajar(string s, FILE *a) {
   int i = 0;
     while(s[i] != '\0') {
       fwrite(&s[i], sizeof(char), 1, a);
@@ -115,13 +115,18 @@ void bajarString(string s, FILE *a) {
     }
   fwrite(&s[i], sizeof(char), 1, a);
 }
-void levantarString(string &s, FILE *a) {
-  string aux;
+void levantar(string &s, FILE *a) {
   int i=0;
-    do {
-      fread(&aux[i],sizeof(char),1,a);
+  string aux;
+  aux = new char[MAX];
+  fread(&aux[i], sizeof(char), 1, a);
+    while(!feof(a) && (aux[i] != '\0')) {
       i++;
-    } while(s[i] != '\0');
+      fread(&aux[i], sizeof(char), 1, a);
+    }
+  strcrear(aux);
+  strcop(s, aux);
+  delete aux;
 }
 
 // ==============================================================================================================

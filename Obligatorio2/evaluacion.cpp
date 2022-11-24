@@ -20,3 +20,11 @@ void mostrar(evaluacion e) {
     else
       printf("pendiente");
 }
+
+// Archivos
+void bajar(evaluacion e, FILE *a) {
+  fwrite(&e, sizeof(evaluacion), 1, a);
+}
+void levantar(evaluacion e, FILE *a) {
+  fread(&e, sizeof(evaluacion), 1, a);
+}

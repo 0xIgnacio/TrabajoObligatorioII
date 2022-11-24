@@ -11,15 +11,16 @@ boolean vacio(lista l) {
       es = TRUE;
   return es;
 }
-void eliminar(lista &l, long codigo) {
-  lista aux = l, aux2;
-    while(!vacio(aux)) {
-        if(darCodigoExp(aux -> info) == codigo) {
-          aux2 = aux -> sig;
+void eliminar(lista &l, long codigo){
+    if(l!=NULL){
+        if(codigo == darCodigoExp(l -> info)){
+          lista aux = l;
+          l = l -> sig;
           delete aux;
-          aux = aux2;
+          eliminar(l, codigo);
         }
-      aux = aux -> sig;
+        else
+          eliminar(l -> sig, codigo);
     }
 }
 revision primero(lista l) {
@@ -110,11 +111,33 @@ long expedienteMayorRev(lista l) {
         if(cantRev(l, darCodigoExp(l -> info)) > cantRev(l -> sig, darCodigoExp(l -> info)))
           return darCodigoExp(l -> info);
         else {
-            if(cantRev(l, darCodigoExp(l -> info)) == cantRev(l -> sig, darCodigoExp(l -> info))) {
+            if(cantRev(l, darCodigoExp(l -> info)) == cantRev(l -> sig, darCodigoExp(l -> info)))
               return expMenor(darCodigoExp(l -> info), darCodigoExp(l -> sig -> info));
-            }
             else
               return darCodigoExp(l -> sig -> info);
         }
     }
+}
+
+// Archivos
+void bajar(lista e) {
+  FILE *f = fopen("revisiones.dat", "wb");
+    while(!vacio(e)) {
+      bajar(e -> info, f);
+      e = e -> sig;
+    }
+  fclose(f);
+}
+void levantar(lista &e) {
+  FILE *f = fopen("revisiones.dat", "rb");
+  revision r;
+  crear(e);
+  if(f!=NULL) {
+    levantar(r, f);
+    while(!feof(f)) {
+      cargar(e, r);
+      levantar(r, f);
+    }
+  }
+  fclose(f);
 }

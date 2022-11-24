@@ -27,8 +27,9 @@ long expMenor(long e, long f) {
 }
 
 // Cargar -Mostrar
-void cargar(revision r) {
+void cargar(revision &r) {
   cargar(r.realizado);
+  strcrear(r.motivo);
     printf("Ingrese el motivo: ");
       scan(r.motivo);
     printf("Ingrese el codigo del expediente: ");
@@ -41,4 +42,18 @@ void mostrar(revision r) {
   print(r.motivo);
     printf(", %ld, ", r.codigoExp);
   mostrar(r.resultado);
+}
+
+// Archivos
+void bajar(revision e, FILE *a) {
+  bajar(e.realizado, a);
+  bajar(e.motivo, a);
+  fwrite(&e.codigoExp, sizeof(long), 1, a);
+  bajar(e.resultado, a);
+}
+void levantar(revision e, FILE *a) {
+  levantar(e.realizado, a);
+  levantar(e.motivo, a);
+  fread(&e.codigoExp, sizeof(long), 1, a);
+  levantar(e.resultado, a);
 }

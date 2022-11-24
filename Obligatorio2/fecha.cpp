@@ -85,3 +85,15 @@ boolean periodo(fecha f, fecha g, fecha h) {
         }
     }
 }
+
+// Archivos
+void bajar(fecha e, FILE *a) {
+  fwrite(&e.dia, sizeof(int), 1, a);
+  fwrite(&e.mes, sizeof(int), 1, a);
+  fwrite(&e.anio, sizeof(int), 1, a);
+}
+void levantar(fecha e, FILE *a) {
+  fread(&e.dia, sizeof(int), 1, a);
+  fread(&e.mes, sizeof(int), 1, a);
+  fread(&e.anio, sizeof(int), 1, a);
+}

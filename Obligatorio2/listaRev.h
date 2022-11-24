@@ -30,4 +30,8 @@ int periodo(lista l, fecha f, fecha g);
 int cantRev(lista l, long codigo);
 long expedienteMayorRev(lista l);
 
+// Archivos
+void bajar(lista e);
+void levantar(lista &e);
+
 #endif

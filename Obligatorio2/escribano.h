@@ -15,4 +15,8 @@ void darApellido(escribano es, string &s);
 void cargar(escribano &es);
 void mostrar(escribano es);
 
+// Archivo
+void bajar(escribano e, FILE *a);
+void levantar(escribano e, FILE *a);
+
 #endif

@@ -18,7 +18,7 @@ boolean strmen(string s1, string s2);
 boolean streq(string s1, string s2);
 
 // ==================== Archivos ====================
-void bajarString(string s, FILE *a);
-void levantarString(string &s, FILE *a);
+void bajar(string s, FILE *a);
+void levantar(string &s, FILE *a);
 
 #endif

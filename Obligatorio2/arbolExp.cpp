@@ -68,7 +68,7 @@ void cargar(arbol &a, expediente e) {
       a -> izq = NULL;
     }
     else {
-        if(e.codigo < darCodigo(a -> info))
+        if(darCodigo(e) < darCodigo(a -> info))
           cargar(a -> izq, e);
         else
           cargar(a -> der, e);
@@ -102,9 +102,9 @@ void borrar(arbol &a, long codigo) {
 }
 void mostrar(arbol a) {
     if(a != NULL) {
-        mostrar(a -> izq);
-        mostrar(a -> info);
-        mostrar(a -> der);
+      mostrar(a -> izq);
+      mostrar(a -> info);
+      mostrar(a -> der);
     }
 }
 
@@ -135,4 +135,31 @@ expediente menor(arbol a) {
       return a -> info;
     else
       return menor(a -> izq);
+}
+
+// Archivos
+void bajarAux(arbol e, FILE *f) {
+    if(e != NULL) {
+      bajar(e -> info, f);
+      bajarAux(e -> izq, f);
+      bajarAux(e -> der, f);
+    }
+}
+void bajar(arbol e) {
+  FILE *f = fopen("expedientes.dat", "wb");
+  bajarAux(e, f);
+  fclose(f);
+}
+void levantar(arbol &e) {
+  FILE *f = fopen("expedientes.dat", "rb");
+  expediente a;
+  crear(e);
+  if(f!=NULL) {
+    levantar(a, f);
+      while(!feof(f)) {
+        cargar(e, a);
+        levantar(a, f);
+      }
+  }
+  fclose(f);
 }

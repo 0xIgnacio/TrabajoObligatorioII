@@ -24,4 +24,8 @@ boolean iguales(fecha f, fecha g);
 boolean valida(fecha f);
 boolean periodo(fecha f, fecha g, fecha h); // La fecha h está dentro del período de f y g
 
+// Archivos
+void bajar(fecha e, FILE *a);
+void levantar(fecha e, FILE *a);
+
 #endif
