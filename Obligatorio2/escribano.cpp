@@ -24,7 +24,7 @@ void bajar(escribano e, FILE *a) {
   bajar(e.nombre, a);
   bajar(e.apellido, a);
 }
-void levantar(escribano e, FILE *a) {
+void levantar(escribano &e, FILE *a) {
   levantar(e.nombre, a);
   levantar(e.apellido, a);
 }

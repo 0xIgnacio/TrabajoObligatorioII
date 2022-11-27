@@ -7,8 +7,10 @@
 int main() {
   int menuP, menuCB, menuL, menuC;
   lista rev; // Revisiones
+  rev = NULL;
   levantar(rev);
   arbol exp; // Expedientes
+  exp = NULL;
   levantar(exp);
     do {
       system("cls");
@@ -56,7 +58,7 @@ int main() {
                                     printf("\nRevision del expediente \"%ld\" cargada correctamente\n\n", darCodigoExp(r));
                                 }
                                 else
-                                    printf("\nError al cargar revision, la fecha de la nueva revision es mayor, volviendo al menu\n\n");
+                                    printf("\nError al cargar revision, la fecha de la nueva revision tiene que ser mayor a la anterior, volviendo al menu\n\n");
                             }
                         }
                         else
@@ -92,9 +94,9 @@ int main() {
                   switch(menuL) {
                     case 1: //* Listar expedientes
                       system("cls");
-                        printf("Lista de expedientes: \n\n");
+                        printf("Lista de expedientes: codigo, caratula, escribano, cantidad de paginas\n\n");
                       mostrar(exp);
-                        printf("\n\n");
+                        printf("\n");
                       system("pause");
                       break;
                     case 2: //* Listar expediente con el mayor y el expediente con menor numero
@@ -108,8 +110,13 @@ int main() {
                       break;
                     case 3: //* Listar revisiones
                       system("cls");
-                      mostrar(rev);
-                        printf("\n\n");
+                        if(vacio(rev))
+                          printf("No hay expedientes registrados aun\n\n");
+                        else {
+                            printf("Lista de expedientes: DD/MM/AAAA, motivo, codigo expediente, evaluacion\n\n");
+                          mostrar(rev);
+                            printf("\n");
+                        }
                       system("pause");
                       break;
                     case 4: //* Listar revisiones segun codigo de expediente
@@ -117,12 +124,11 @@ int main() {
                       long c;
                         printf("Ingresa el codigo del expediente para ver sus revisiones: ");
                           scanf("%d", &c);
-                        if(existe(rev, c)) {
-                            printf("\n");
+                        if(existe(rev, c))
                           mostrar(rev, c);
-                        }
                         else
-                          printf("Error al buscar expediente, el codigo no existe, volviendo al menu\n\n");
+                          printf("\nError, el codigo no existe o el mismo no tiene revisiones, volviendo al menu\n\n");
+                        printf("\n\n");
                       system("pause");
                       break;
                   }
@@ -150,7 +156,7 @@ int main() {
                       break;
                     case 2: //* Expediente con mayor cantidad de revisiones
                       system("cls");
-                        printf("\nEl expediente con mayor cantidad de revisiones es el expediente de codigo \"%ld\"\n\n", expedienteMayorRev(rev));
+                        printf("El expediente con mayor cantidad de revisiones es el expediente de codigo \"%ld\"\n\n", expedienteMayorRev(rev));
                       system("pause");
                       break;
                     case 3: //* Cantidad de revisiones en un periodo de tiempo

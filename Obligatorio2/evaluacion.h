@@ -9,6 +9,6 @@ void mostrar(evaluacion e);
 
 // Archivos
 void bajar(evaluacion e, FILE *a);
-void levantar(evaluacion e, FILE *a);
+void levantar(evaluacion &e, FILE *a);
 
 #endif

@@ -26,6 +26,6 @@ boolean periodo(fecha f, fecha g, fecha h); // La fecha h está dentro del perí
 
 // Archivos
 void bajar(fecha e, FILE *a);
-void levantar(fecha e, FILE *a);
+void levantar(fecha &e, FILE *a);
 
 #endif

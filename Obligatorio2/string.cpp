@@ -16,8 +16,8 @@ int strlar(string s) {
   return i;
 }
 void strcop(string &s1,string s2) {
-  int i = 0;
-  int largo = strlar(s2) + 1;
+  int i = 0, largo = strlar(s2) + 1;
+  strcrear(s1);
   delete [] s1;
   s1 = new char[largo];
     while (s2[i] != '\0') {
@@ -38,7 +38,6 @@ void scan(string &s) {
         scanf("%c", &c);
     }
   aux[i] = '\0';
-  strcrear(s);
   strcop (s,aux);
   strdestruir (aux);
 }
@@ -79,9 +78,8 @@ void print(string s) {
     }
 }
 boolean strmen(string s1, string s2) {
+  boolean encontre = FALSE, menor = FALSE;
   int i = 0;
-  boolean encontre = FALSE;
-  boolean menor = FALSE;
     while ((!encontre) && (s1[i] != '\0') && (s2[i] != '\0')) {
         if (s1[i] != s2[i])
           encontre = TRUE;
@@ -124,7 +122,6 @@ void levantar(string &s, FILE *a) {
       i++;
       fread(&aux[i], sizeof(char), 1, a);
     }
-  strcrear(aux);
   strcop(s, aux);
   delete aux;
 }

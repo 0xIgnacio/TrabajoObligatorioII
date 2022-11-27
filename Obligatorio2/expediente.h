@@ -20,6 +20,6 @@ void mostrar(expediente e);
 
 // Archivos
 void bajar(expediente e, FILE *a);
-void levantar(expediente e, FILE *a);
+void levantar(expediente &e, FILE *a);
 
 #endif

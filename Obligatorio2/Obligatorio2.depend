@@ -12,66 +12,66 @@
 
 1668808128 c:\users\perci\onedrive\escritorio\obligatorio2\boolean.h
 
-1669250508 source:c:\users\perci\onedrive\escritorio\obligatorio2\escribano.cpp
+1669410881 source:c:\users\perci\onedrive\escritorio\obligatorio2\escribano.cpp
 	<stdio.h>
 	"escribano.h"
 
-1669250508 c:\users\perci\onedrive\escritorio\obligatorio2\escribano.h
+1669410881 c:\users\perci\onedrive\escritorio\obligatorio2\escribano.h
 	"string.h"
 
 1669250508 c:\users\perci\onedrive\escritorio\obligatorio2\string.h
 	"boolean.h"
 
-1669250508 source:c:\users\perci\onedrive\escritorio\obligatorio2\evaluacion.cpp
+1669530976 source:c:\users\perci\onedrive\escritorio\obligatorio2\evaluacion.cpp
 	<stdio.h>
 	"evaluacion.h"
 
-1669250508 c:\users\perci\onedrive\escritorio\obligatorio2\evaluacion.h
+1669410881 c:\users\perci\onedrive\escritorio\obligatorio2\evaluacion.h
 
-1669250508 source:c:\users\perci\onedrive\escritorio\obligatorio2\fecha.cpp
+1669411765 source:c:\users\perci\onedrive\escritorio\obligatorio2\fecha.cpp
 	<stdio.h>
 	"fecha.h"
 
-1669250508 c:\users\perci\onedrive\escritorio\obligatorio2\fecha.h
+1669410881 c:\users\perci\onedrive\escritorio\obligatorio2\fecha.h
 	"boolean.h"
 
-1669250756 source:c:\users\perci\onedrive\escritorio\obligatorio2\listarev.cpp
+1669530870 source:c:\users\perci\onedrive\escritorio\obligatorio2\listarev.cpp
 	<stdio.h>
 	"listaRev.h"
 
 1669250508 c:\users\perci\onedrive\escritorio\obligatorio2\listarev.h
 	"revision.h"
 
-1669250508 c:\users\perci\onedrive\escritorio\obligatorio2\revision.h
+1669410881 c:\users\perci\onedrive\escritorio\obligatorio2\revision.h
 	"fecha.h"
 	"evaluacion.h"
 	"string.h"
 
-1669250756 source:c:\users\perci\onedrive\escritorio\obligatorio2\main.cpp
+1669530905 source:c:\users\perci\onedrive\escritorio\obligatorio2\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	"menu.h"
 	"arbolExp.h"
 	"listaRev.h"
 
-1669237113 source:c:\users\perci\onedrive\escritorio\obligatorio2\menu.cpp
+1669257001 source:c:\users\perci\onedrive\escritorio\obligatorio2\menu.cpp
 	<stdio.h>
 	"menu.h"
 
 1668893814 c:\users\perci\onedrive\escritorio\obligatorio2\menu.h
 
-1669251107 source:c:\users\perci\onedrive\escritorio\obligatorio2\string.cpp
+1669411170 source:c:\users\perci\onedrive\escritorio\obligatorio2\string.cpp
 	<stdio.h>
 	"string.h"
 
-1669250508 c:\users\perci\onedrive\escritorio\obligatorio2\expediente.h
+1669410881 c:\users\perci\onedrive\escritorio\obligatorio2\expediente.h
 	"escribano.h"
 
-1669250508 source:c:\users\perci\onedrive\escritorio\obligatorio2\expediente.cpp
+1669410881 source:c:\users\perci\onedrive\escritorio\obligatorio2\expediente.cpp
 	<stdio.h>
 	"expediente.h"
 
-1669250508 source:c:\users\perci\onedrive\escritorio\obligatorio2\revision.cpp
+1669410881 source:c:\users\perci\onedrive\escritorio\obligatorio2\revision.cpp
 	<stdio.h>
 	"revision.h"
 

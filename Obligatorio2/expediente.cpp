@@ -34,7 +34,7 @@ void bajar(expediente e, FILE *a) {
   bajar(e.datosEscri, a);
   fwrite(&e.cantPaginas, sizeof(int), 1, a);
 }
-void levantar(expediente e, FILE *a) {
+void levantar(expediente &e, FILE *a) {
   fread(&e.codigo, sizeof(long), 1, a);
   levantar(e.caratula, a);
   levantar(e.datosEscri, a);

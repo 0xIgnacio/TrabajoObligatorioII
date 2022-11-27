@@ -17,6 +17,6 @@ void mostrar(escribano es);
 
 // Archivo
 void bajar(escribano e, FILE *a);
-void levantar(escribano e, FILE *a);
+void levantar(escribano &e, FILE *a);
 
 #endif

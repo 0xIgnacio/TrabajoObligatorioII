@@ -51,7 +51,7 @@ void bajar(revision e, FILE *a) {
   fwrite(&e.codigoExp, sizeof(long), 1, a);
   bajar(e.resultado, a);
 }
-void levantar(revision e, FILE *a) {
+void levantar(revision &e, FILE *a) {
   levantar(e.realizado, a);
   levantar(e.motivo, a);
   fread(&e.codigoExp, sizeof(long), 1, a);

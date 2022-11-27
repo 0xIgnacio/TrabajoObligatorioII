@@ -28,6 +28,6 @@ void mostrar(revision r);
 
 // Archivos
 void bajar(revision e, FILE *a);
-void levantar(revision e, FILE *a);
+void levantar(revision &e, FILE *a);
 
 #endif

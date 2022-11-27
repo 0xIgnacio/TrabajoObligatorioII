@@ -34,7 +34,7 @@ boolean menor(fecha f, fecha g) {
         if(f.mes < g.mes)
           es = TRUE;
         else if(f.mes == g.mes) {
-            if(f.dia < g.dia)
+            if(f.dia <= g.dia)
               es = TRUE;
         }
     }
@@ -55,18 +55,18 @@ boolean valida(fecha f) {
       case 8:
       case 10:
       case 12:
-        if(f.dia >= 0 && f.dia <= 30)
+        if(f.dia > 0 && f.dia <= 30)
           valida = TRUE;
         break;
       case 4:
       case 6:
       case 9:
       case 11:
-        if(f.dia >= 0 && f.dia <= 31)
+        if(f.dia > 0 && f.dia <= 31)
           valida = TRUE;
         break;
       case 2:
-        if(f.dia >= 0 && f.dia <= 28)
+        if(f.dia > 0 && f.dia <= 28)
           valida = TRUE;
         else if(f.anio % 4 == 0 && f.dia == 29)
           valida = TRUE;
@@ -92,7 +92,7 @@ void bajar(fecha e, FILE *a) {
   fwrite(&e.mes, sizeof(int), 1, a);
   fwrite(&e.anio, sizeof(int), 1, a);
 }
-void levantar(fecha e, FILE *a) {
+void levantar(fecha &e, FILE *a) {
   fread(&e.dia, sizeof(int), 1, a);
   fread(&e.mes, sizeof(int), 1, a);
   fread(&e.anio, sizeof(int), 1, a);

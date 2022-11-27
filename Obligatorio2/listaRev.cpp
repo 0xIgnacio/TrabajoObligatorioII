@@ -53,8 +53,10 @@ boolean existe(lista l, long codigo) {
 }
 void mostrar(lista l, long codigo) {
     if(!vacio(l)) {
-        if(darCodigoExp(l -> info) == codigo)
+        if(darCodigoExp(l -> info) == codigo) {
+            printf("\n");
           mostrar(l -> info);
+        }
         mostrar(l -> sig, codigo);
     }
 }
