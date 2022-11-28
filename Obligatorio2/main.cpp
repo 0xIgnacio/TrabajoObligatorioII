@@ -162,7 +162,9 @@ int main() {
                     case 3: //* Cantidad de revisiones en un periodo de tiempo
                       system("cls");
                       fecha f, g;
+                      printf("Primer fecha: \n\n");
                       cargar(f);
+                      printf("\nSegunda fecha: \n\n");
                       cargar(g);
                         if(valida(f) && valida(g)) {
                             if(menor(f, g)){
