@@ -50,7 +50,7 @@ int main() {
                         if(existe(exp, darCodigoExp(r))) {
                             if(vacio(rev)) {
                               cargar(rev, r); // Si el expediente existe y la lista es vacia, cargo la revision
-                                printf("\nRevision del expediente \"%ld\" cargada correctamente\n\n");
+                                printf("\nRevision del expediente \"%ld\" cargada correctamente\n\n", darCodigoExp(r));
                             }
                             else {
                                 if(menor(darFecha(rev -> info),darFecha(r))) {
@@ -166,13 +166,14 @@ int main() {
                       cargar(g);
                         if(valida(f) && valida(g)) {
                             if(menor(f, g)){
-                                printf("La cantidad de revisiones entre las dos fechas es %d", periodo(rev, f, g));
+                                printf("\nLa cantidad de revisiones entre las dos fechas es %d", periodo(rev, f, g));
                             }
                             else
-                                printf("Error, la primer fecha tiene que ser menor que la segunda");
+                                printf("\nError, la primer fecha tiene que ser menor que la segunda");
                         }
                         else
-                          printf("Error, fechas invalidas\n\n");
+                          printf("Error, fechas invalidas");
+                        printf("\n\n");
                       system("pause");
                       break;
                     case 4: //* Cantidad de revisiones de cada tipo

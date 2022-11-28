@@ -95,9 +95,9 @@ int periodo(lista l, fecha f, fecha g) {
       return 0;
     else {
         if(periodo(f, g, darFecha(l -> info)))
-          return 1 + periodo(l, f, g);
+          return 1 + periodo(l -> sig, f, g);
         else
-          return periodo(l, f, g);
+          return periodo(l -> sig, f, g);
     }
 }
 int cantRev(lista l, long codigo) {
