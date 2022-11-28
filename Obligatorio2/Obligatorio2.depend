@@ -75,3 +75,79 @@
 	<stdio.h>
 	"revision.h"
 
+1669250756 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\arbolexp.cpp
+	<stdio.h>
+	"arbolExp.h"
+
+1669250508 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\arbolexp.h
+	"expediente.h"
+
+1669410881 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\expediente.h
+	"escribano.h"
+
+1669410881 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\escribano.h
+	"string.h"
+
+1669661280 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\string.h
+	"boolean.h"
+
+1668808128 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\boolean.h
+
+1668808128 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\boolean.cpp
+	<stdio.h>
+	"boolean.h"
+
+1669410881 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\escribano.cpp
+	<stdio.h>
+	"escribano.h"
+
+1669530976 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\evaluacion.cpp
+	<stdio.h>
+	"evaluacion.h"
+
+1669410881 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\evaluacion.h
+
+1669410881 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\expediente.cpp
+	<stdio.h>
+	"expediente.h"
+
+1669665570 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\listarev.cpp
+	<stdio.h>
+	"listaRev.h"
+
+1669250508 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\listarev.h
+	"revision.h"
+
+1669410881 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\revision.h
+	"fecha.h"
+	"evaluacion.h"
+	"string.h"
+
+1669410881 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\fecha.h
+	"boolean.h"
+
+1669665570 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+	"arbolExp.h"
+	"listaRev.h"
+
+1668893814 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\menu.h
+
+1669257001 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\menu.cpp
+	<stdio.h>
+	"menu.h"
+
+1669410881 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\revision.cpp
+	<stdio.h>
+	"revision.h"
+
+1669411170 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\string.cpp
+	<stdio.h>
+	"string.h"
+
+1669664704 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\fecha.cpp
+	<stdio.h>
+	"fecha.h"
+

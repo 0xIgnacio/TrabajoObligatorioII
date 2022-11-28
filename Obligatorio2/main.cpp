@@ -127,7 +127,7 @@ int main() {
                         if(existe(rev, c))
                           mostrar(rev, c);
                         else
-                          printf("\nError, el codigo no existe o el mismo no tiene revisiones, volviendo al menu\n\n");
+                          printf("\nError, el codigo no existe o el mismo no tiene revisiones, volviendo al menu\n");
                         printf("\n\n");
                       system("pause");
                       break;
@@ -164,8 +164,13 @@ int main() {
                       fecha f, g;
                       cargar(f);
                       cargar(g);
-                        if(valida(f) && valida(g) && menor(f, g))
-                          printf("La cantidad de revisiones entre las dos fechas es %d", periodo(rev, f, g));
+                        if(valida(f) && valida(g)) {
+                            if(menor(f, g)){
+                                printf("La cantidad de revisiones entre las dos fechas es %d", periodo(rev, f, g));
+                            }
+                            else
+                                printf("Error, la primer fecha tiene que ser menor que la segunda");
+                        }
                         else
                           printf("Error, fechas invalidas\n\n");
                       system("pause");

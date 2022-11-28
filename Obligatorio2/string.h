@@ -17,7 +17,7 @@ void print(string s);
 boolean strmen(string s1, string s2);
 boolean streq(string s1, string s2);
 
-// ==================== Archivos ====================
+// Archivos
 void bajar(string s, FILE *a);
 void levantar(string &s, FILE *a);
 

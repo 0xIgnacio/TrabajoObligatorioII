@@ -30,12 +30,16 @@ boolean menor(fecha f, fecha g) {
   boolean es = FALSE;
     if(f.anio < g.anio)
       es = TRUE;
-    else if(f.anio == g.anio) {
-        if(f.mes < g.mes)
-          es = TRUE;
-        else if(f.mes == g.mes) {
-            if(f.dia <= g.dia)
+    else {
+        if(f.anio == g.anio) {
+            if(f.mes < g.mes)
               es = TRUE;
+            else {
+                if(f.mes == g.mes) {
+                  if(f.dia <= g.dia)
+                    es = TRUE;
+                }
+            }
         }
     }
   return es;
@@ -78,12 +82,21 @@ boolean valida(fecha f) {
 }
 boolean periodo(fecha f, fecha g, fecha h) {
   boolean es = FALSE;
-    if(darAnio(h) >= darAnio(f) && darAnio(h) <= darAnio(g)) {
-        if(darMes(h) >= darMes(f) && darMes(h) <= darMes(g)) {
-            if(darDia(h) >= darDia(f) && darDia(h) <= darDia(g))
+    if(darAnio(h) > darAnio(f) && darAnio(h) < darAnio(g))
+      es = TRUE;
+    else {
+        if(darAnio(h) == darAnio(f) && darAnio(h) == darAnio(g)) {
+            if(darMes(h) > darMes(f) && darMes(h) < darMes(g))
               es = TRUE;
+            else {
+                if(darMes(h) == darMes(f) && darMes(h) == darMes(g)) {
+                    if(darDia(h) >= darDia(f) && darDia(h) <= darDia(g))
+                      es = TRUE;
+                }
+            }
         }
     }
+  return es;
 }
 
 // Archivos
