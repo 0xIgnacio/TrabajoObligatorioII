@@ -160,7 +160,10 @@ int main() {
                       break;
                     case 2: //* Expediente con mayor cantidad de revisiones
                       system("cls");
-                        printf("El expediente con mayor cantidad de revisiones es el expediente de codigo \"%ld\"\n\n", expedienteMayorRev(rev));
+                        if(vacio(rev))
+                            printf("Aun no hay revisiones \n\n");
+                        else
+                            printf("El expediente con mayor cantidad de revisiones es el expediente de codigo \"%ld\"\n\n", expedienteMayorRev(rev));
                       system("pause");
                       break;
                     case 3: //* Cantidad de revisiones en un periodo de tiempo
