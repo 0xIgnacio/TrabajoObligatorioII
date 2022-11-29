@@ -105,10 +105,14 @@ int main() {
                       break;
                     case 2: //* Listar expediente con el mayor y el expediente con menor numero
                       system("cls");
-                        printf("\nExpediente con mayor codigo: \n");
-                      mostrar(mayor(exp));
-                        printf("\n\nExpediente con menor codigo: \n");
-                      mostrar(menor(exp));
+                        if(vacio(exp))
+                          printf("Aun no hay expedientes");
+                        else {
+                            printf("\nExpediente con mayor codigo: \n");
+                          mostrar(mayor(exp));
+                            printf("\n\nExpediente con menor codigo: \n");
+                          mostrar(menor(exp));
+                        }
                         printf("\n\n");
                       system("pause");
                       break;
