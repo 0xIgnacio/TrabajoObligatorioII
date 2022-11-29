@@ -20,10 +20,10 @@ evaluacion darEvaluacion(revision r) {
 
 // Funcionalidades
 long expMenor(long e, long f) {
-  long mayor = e;
-    if(e < f)
-      mayor = f;
-  return mayor;
+  long menor = e;
+    if(e > f)
+      menor = f;
+  return menor;
 }
 
 // Cargar -Mostrar

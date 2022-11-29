@@ -109,16 +109,23 @@ int cantRev(lista l, long codigo) {
     }
 }
 long expedienteMayorRev(lista l) {
-    if(!vacio(l)) {
-        if(cantRev(l, darCodigoExp(l -> info)) > cantRev(l -> sig, darCodigoExp(l -> info)))
-          return darCodigoExp(l -> info);
-        else {
-            if(cantRev(l, darCodigoExp(l -> info)) == cantRev(l -> sig, darCodigoExp(l -> info)))
-              return expMenor(darCodigoExp(l -> info), darCodigoExp(l -> sig -> info));
-            else
-              return darCodigoExp(l -> sig -> info);
+  long codigo = darCodigoExp(l -> info);
+  int cant = cantRev(l, codigo);
+  l = l -> sig;
+    while(l != NULL) {
+      long codigo2 = darCodigoExp(l -> info);
+      int cant2 = cantRev(l, codigo2);
+        if(cant < cant2) {
+          cant = cant2;
+          codigo = codigo2;
         }
+        else {
+            if(cant == cant2)
+              codigo = expMenor(codigo, codigo2);
+        }
+      l = l -> sig;
     }
+  return codigo;
 }
 
 // Archivos

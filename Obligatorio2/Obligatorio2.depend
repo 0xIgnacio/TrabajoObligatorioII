@@ -82,7 +82,7 @@
 1669250508 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\arbolexp.h
 	"expediente.h"
 
-1669410881 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\expediente.h
+1669683687 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\expediente.h
 	"escribano.h"
 
 1669410881 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\escribano.h
@@ -107,11 +107,11 @@
 
 1669410881 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\evaluacion.h
 
-1669410881 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\expediente.cpp
+1669683687 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\expediente.cpp
 	<stdio.h>
 	"expediente.h"
 
-1669671680 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\listarev.cpp
+1669683687 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\listarev.cpp
 	<stdio.h>
 	"listaRev.h"
 
@@ -126,7 +126,7 @@
 1669410881 c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\fecha.h
 	"boolean.h"
 
-1669665570 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\main.cpp
+1669672465 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	"menu.h"
@@ -139,7 +139,7 @@
 	<stdio.h>
 	"menu.h"
 
-1669410881 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\revision.cpp
+1669683687 source:c:\users\perci\onedrive\escritorio\trabajoobligatorioii\obligatorio2\revision.cpp
 	<stdio.h>
 	"revision.h"
 

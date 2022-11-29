@@ -94,9 +94,13 @@ int main() {
                   switch(menuL) {
                     case 1: //* Listar expedientes
                       system("cls");
-                        printf("Lista de expedientes: codigo, caratula, escribano, cantidad de paginas\n\n");
-                      mostrar(exp);
-                        printf("\n");
+                        if(vacio(exp))
+                          printf("No hay expedientes revisados aun\n\n");
+                        else {
+                            printf("Lista de expedientes: codigo, caratula, escribano, cantidad de paginas\n\n");
+                          mostrar(exp);
+                            printf("\n");
+                        }
                       system("pause");
                       break;
                     case 2: //* Listar expediente con el mayor y el expediente con menor numero
